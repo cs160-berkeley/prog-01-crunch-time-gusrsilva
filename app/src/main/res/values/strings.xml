@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CALories</string>
+    <string name="reps">Reps</string>
+    <string name="minutes">Minutes</string>
+    <string name="calc_button">Calculate</string>
+    <string name="calories_burned">Calories burned:</string>
+    <string name="equivalent_to">That\'s equivalent to:</string>
+    <string name="hint">Enter Amount</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
