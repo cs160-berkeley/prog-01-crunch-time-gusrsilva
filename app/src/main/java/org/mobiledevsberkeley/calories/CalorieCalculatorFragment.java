@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -75,8 +76,15 @@ public class CalorieCalculatorFragment extends Fragment {
                 prefEditor.putInt(AMOUNT_KEY, currentAmount + newAmount);
                 prefEditor.apply();
                 Snackbar.make(v
-                        ,String.format(Locale.ENGLISH, "Added %d Calories to your Progress!",newAmount)
-                        ,Snackbar.LENGTH_SHORT).show();
+                        ,String.format(Locale.ENGLISH, "Added %d Calories!",newAmount)
+                        ,Snackbar.LENGTH_LONG)
+                        .setAction("Check Progress", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                TabbedActivity.viewPager.setCurrentItem(1,true);
+                            }
+                        })
+                        .show();
             }
         });
         vNumber.addTextChangedListener(new TextWatcher() {
@@ -134,7 +142,6 @@ public class CalorieCalculatorFragment extends Fragment {
 
         return view;
     }
-
 
     private void updateResults()
     {

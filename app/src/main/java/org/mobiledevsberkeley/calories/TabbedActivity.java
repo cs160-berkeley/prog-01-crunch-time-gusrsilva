@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 
@@ -18,6 +19,7 @@ import java.util.List;
 
 public class TabbedActivity extends AppCompatActivity {
     private Fragment calorieFrag, targetFrag;
+    public static ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public class TabbedActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.tabanim_viewpager);
+        viewPager = (ViewPager) findViewById(R.id.tabanim_viewpager);
         setupViewPager(viewPager);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabanim_tabs);
@@ -76,6 +78,7 @@ public class TabbedActivity extends AppCompatActivity {
         adapter.addFrag(calorieFrag, "Calorie Calculator");
         adapter.addFrag(targetFrag, "My Goal");
         viewPager.setAdapter(adapter);
+
     }
 
     @Override

@@ -35,6 +35,7 @@ public class SetGoalFragment extends Fragment {
     private Button bSetGoal, bResetCount;
     private TextView textPercentage, textRemaining, textCurrentGoal;
     private SharedPreferences.Editor prefEditor;
+    private boolean needToRedrawDeco = true;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -72,8 +73,10 @@ public class SetGoalFragment extends Fragment {
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
         if (isVisibleToUser) {
+            if(needToRedrawDeco || currentAmount != sharedPref.getInt(AMOUNT_KEY, currentAmount))
             createDecoView();
             updateDecoView();
+            needToRedrawDeco = false;
         }
         else {  }
     }
