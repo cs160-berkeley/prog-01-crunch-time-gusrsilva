@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.mobiledevsberkeley.calories.SetTargetFragment"
+    android:background="@color/bg">
+
+    <com.hookedonplay.decoviewlib.DecoView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        custom:dv_lineWidth="26dp"
+        android:id="@+id/decoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="47%"
+            android:id="@+id/textPercentage"
+            android:textSize="80sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 / "
+                android:id="@+id/curr_cals" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Calories"
+                android:id="@+id/goal_cals" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

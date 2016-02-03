@@ -48,11 +48,10 @@ public class TabbedActivity extends AppCompatActivity {
 
                 switch (tab.getPosition()) {
                     case 0:
-                        showToast("One");
+                        //Screen 1 showing
                         break;
                     case 1:
-                        showToast("Two");
-
+                        //Screen 2 showing
                         break;
                     case 2:
                         showToast("Three");
@@ -80,7 +79,7 @@ public class TabbedActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new CalorieCalculatorFragment(), "Calorie Calculator");
-        adapter.addFrag(new CalorieCalculatorFragment(), "Set Target");
+        adapter.addFrag(new SetTargetFragment(), "My Target");
         viewPager.setAdapter(adapter);
     }
 
