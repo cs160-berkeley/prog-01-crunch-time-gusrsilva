@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.annotation.StringDef;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +24,7 @@ public class SetTargetFragment extends Fragment {
     private int backIndex, series1Index;
     private SharedPreferences sharedPref;
     private String GOAL_KEY = "goal";
+    private int currentGoal = 100;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,10 +33,6 @@ public class SetTargetFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_set_target, container, false);
         decoView = (DecoView) view.findViewById(R.id.decoView);
         sharedPref = PreferenceManager.getDefaultSharedPreferences(getContext());
-        if(!sharedPref.contains(GOAL_KEY))
-        {
-            Toast.makeText(getContext(), "uh-oh it looks like you haven't set a goal yet!", Toast.LENGTH_SHORT).show();
-        }
 
 
         final SeriesItem backgroundSeries = new SeriesItem.Builder(Color.parseColor("#22E2E2E2"))
@@ -51,12 +49,14 @@ public class SetTargetFragment extends Fragment {
 
         series1Index = decoView.addSeries(workoutSeries);
 
-        final TextView textPercentage = (TextView) view.findViewById(R.id.textPercentage);
+        final TextView textPercentage = (TextView)view.findViewById(R.id.textPercentage);
+        final TextView textRemaining = (TextView)view.findViewById(R.id.cals_remaining);
         workoutSeries.addArcSeriesItemListener(new SeriesItem.SeriesItemListener() {
             @Override
             public void onSeriesItemAnimationProgress(float percentComplete, float currentPosition) {
                 float percentFilled = ((currentPosition - workoutSeries.getMinValue()) / (workoutSeries.getMaxValue() - workoutSeries.getMinValue()));
                 textPercentage.setText(String.format("%.0f%%", percentFilled * 100f));
+                textRemaining.setText(String.format("%d Calories Remaining", (currentGoal-(int)currentPosition)));
             }
 
             @Override
@@ -73,13 +73,22 @@ public class SetTargetFragment extends Fragment {
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
         if (isVisibleToUser) {
-            decoView.addEvent(new DecoEvent.Builder(100)
-                    .setIndex(backIndex)
-                    .setDuration(1500)
-                    .build());
+            createDecoView();
             updateDecoView(50);
         }
         else {  }
+    }
+
+    public void createDecoView()
+    {
+        if(sharedPref.contains(GOAL_KEY))
+        {
+            currentGoal = sharedPref.getInt(GOAL_KEY, currentGoal);
+        }
+        decoView.addEvent(new DecoEvent.Builder(currentGoal)
+                .setIndex(backIndex)
+                .setDuration(1500)
+                .build());
     }
 
     public void updateDecoView(int n)

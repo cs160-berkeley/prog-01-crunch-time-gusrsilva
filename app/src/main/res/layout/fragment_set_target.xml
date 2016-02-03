@@ -5,13 +5,47 @@
     tools:context="org.mobiledevsberkeley.calories.SetTargetFragment"
     android:background="@color/bg">
 
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Goal: 100 Calories"
+        android:id="@+id/current_goal"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/current_goal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Target"
+            android:id="@+id/edit_target"
+            android:backgroundTint="@color/colorAccent" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Target"
+            android:id="@+id/new_target"
+            android:backgroundTint="@color/colorAccent" />
+
+    </LinearLayout>
+
     <com.hookedonplay.decoviewlib.DecoView
         xmlns:custom="http://schemas.android.com/apk/res-auto"
         custom:dv_lineWidth="26dp"
         android:id="@+id/decoView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="20dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -22,7 +56,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="47%"
+            android:text="0%"
             android:id="@+id/textPercentage"
             android:textSize="80sp"
             android:fontFamily="sans-serif-thin" />
@@ -35,14 +69,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0 / "
-                android:id="@+id/curr_cals" />
+                android:text="0 Calories Remaining"
+                android:id="@+id/cals_remaining" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0 Calories"
-                android:id="@+id/goal_cals" />
         </LinearLayout>
     </LinearLayout>
 
