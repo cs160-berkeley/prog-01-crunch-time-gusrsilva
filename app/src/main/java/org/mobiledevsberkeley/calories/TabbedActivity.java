@@ -1,7 +1,5 @@
 package org.mobiledevsberkeley.calories;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -9,15 +7,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.Toast;
 
 
@@ -25,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TabbedActivity extends AppCompatActivity {
+    private Fragment calorieFrag, targetFrag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,8 +71,10 @@ public class TabbedActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new CalorieCalculatorFragment(), "Calorie Calculator");
-        adapter.addFrag(new SetTargetFragment(), "My Target");
+        calorieFrag = new CalorieCalculatorFragment();
+        targetFrag = new SetGoalFragment();
+        adapter.addFrag(calorieFrag, "Calorie Calculator");
+        adapter.addFrag(targetFrag, "My Goal");
         viewPager.setAdapter(adapter);
     }
 

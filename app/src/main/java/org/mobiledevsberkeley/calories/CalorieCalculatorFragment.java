@@ -1,6 +1,9 @@
 package org.mobiledevsberkeley.calories;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -20,6 +23,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 
 public class CalorieCalculatorFragment extends Fragment {
@@ -32,8 +36,10 @@ public class CalorieCalculatorFragment extends Fragment {
     private EditText vNumber;
     private String[] workoutNames, unitNames = new String[2];
     private int[] workoutVals, workoutUnits;
-    private RecyclerView equivRecycler;
+    private String GOAL_KEY = "goal", AMOUNT_KEY = "amnt";
     private ArrayList<TextView> equivTexts = new ArrayList<>();
+    private SharedPreferences sharedPref;
+    private SharedPreferences.Editor prefEditor;
 
     public CalorieCalculatorFragment() {
         // Required empty public constructor
@@ -45,6 +51,9 @@ public class CalorieCalculatorFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view =  inflater.inflate(R.layout.fragment_calorie_calculator, container, false);
+
+        sharedPref = PreferenceManager.getDefaultSharedPreferences(getContext());
+        prefEditor = sharedPref.edit();
 
         workoutNames = getResources().getStringArray(R.array.workout_name_array);
         unitNames[0] = getResources().getString(R.string.reps);unitNames[1]=getResources().getString(R.string.minutes);
@@ -61,6 +70,13 @@ public class CalorieCalculatorFragment extends Fragment {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int currentAmount = sharedPref.getInt(AMOUNT_KEY, 0);
+                int newAmount = getCalsBurned();
+                prefEditor.putInt(AMOUNT_KEY, currentAmount + newAmount);
+                prefEditor.apply();
+                Snackbar.make(v
+                        ,String.format(Locale.ENGLISH, "Added %d Calories to your Progress!",newAmount)
+                        ,Snackbar.LENGTH_SHORT).show();
             }
         });
         vNumber.addTextChangedListener(new TextWatcher() {

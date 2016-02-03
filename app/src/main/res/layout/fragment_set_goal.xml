@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.mobiledevsberkeley.calories.SetTargetFragment"
+    tools:context=".SetGoalFragment"
     android:background="@color/bg">
 
     <TextView
@@ -25,16 +25,16 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Edit Target"
-            android:id="@+id/edit_target"
+            android:text="New Goal"
+            android:id="@+id/new_goal"
             android:backgroundTint="@color/colorAccent" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Target"
-            android:id="@+id/new_target"
-            android:backgroundTint="@color/colorAccent" />
+            android:text="Reset Count"
+            android:id="@+id/reset_count"
+            android:backgroundTint="@color/red" />
 
     </LinearLayout>
 
