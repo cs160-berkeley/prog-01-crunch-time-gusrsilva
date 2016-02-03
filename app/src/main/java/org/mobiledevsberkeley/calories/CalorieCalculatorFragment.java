@@ -26,7 +26,6 @@ public class CalorieCalculatorFragment extends Fragment {
     private TextView vUnits, vEquivUnits, vCalsBurned, vEquivCalsBurned;
     private ImageView vFlame;
     private EditText vNumber;
-    private Spinner equivalentSpinner;
     private String[] workoutNames, unitNames = new String[2];
     private int[] workoutVals, workoutUnits;
 
@@ -49,10 +48,8 @@ public class CalorieCalculatorFragment extends Fragment {
         currentWorkoutValue = workoutVals[currentWorkoutPos];
 
         vUnits = (TextView)view.findViewById(R.id.units_text);
-        vEquivUnits = (TextView)view.findViewById(R.id.equiv_units_text);
         vFlame = (ImageView)view.findViewById(R.id.flame_image);
         vCalsBurned = (TextView)view.findViewById(R.id.calories_burned_amount);
-        vEquivCalsBurned = (TextView)view.findViewById(R.id.equivalent_amount);
         vNumber = (EditText) view.findViewById(R.id.num_text);
         saveButton = (Button)view.findViewById(R.id.save_button);
         saveButton.setOnClickListener(new View.OnClickListener() {
@@ -96,27 +93,6 @@ public class CalorieCalculatorFragment extends Fragment {
             }
         });
 
-        //Initialize Spinner to choose equivalent workout to compare
-        equivalentSpinner = (Spinner) view.findViewById(R.id.equivalent_workout_spinner);
-        ArrayAdapter<CharSequence> equivalentAdapter = ArrayAdapter.createFromResource(getContext(),
-                R.array.workout_name_array, R.layout.my_spinner_item);
-        equivalentAdapter.setDropDownViewResource(R.layout.my_spinner_dropdown_item);
-        equivalentSpinner.setAdapter(equivalentAdapter);
-        equivalentSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                equivWorkoutPos = position;
-                int equivalentAmount = getEquivAmount();
-                vEquivCalsBurned.setText(String.valueOf(equivalentAmount));
-                String units = unitNames[workoutUnits[position]] + " of";
-                vEquivUnits.setText(units);
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
         return view;
     }
 
@@ -141,12 +117,8 @@ public class CalorieCalculatorFragment extends Fragment {
         //Set equivalent to next workout amount
         if(currentWorkoutPos == equivWorkoutPos) {
             equivWorkoutPos = (currentWorkoutPos + 1) % workoutNames.length;
-            equivalentSpinner.setSelection(equivWorkoutPos, true);
         }
-        int equivalentAmount = getEquivAmount();
-        vEquivCalsBurned.setText(String.valueOf(equivalentAmount));
-        String units = unitNames[workoutUnits[equivWorkoutPos]] + " of";
-        vEquivUnits.setText(units);
+
     }
 
     private int getCalsBurned()
