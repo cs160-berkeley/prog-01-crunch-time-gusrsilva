@@ -2,6 +2,8 @@ package org.mobiledevsberkeley.calories;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +30,8 @@ public class CalorieCalculatorFragment extends Fragment {
     private EditText vNumber;
     private String[] workoutNames, unitNames = new String[2];
     private int[] workoutVals, workoutUnits;
+    private RecyclerView equivRecycler;
+    private RAdapter equivAdt;
 
     public CalorieCalculatorFragment() {
         // Required empty public constructor
@@ -92,6 +96,8 @@ public class CalorieCalculatorFragment extends Fragment {
 
             }
         });
+
+        //Initialize RecyclerView
 
         return view;
     }

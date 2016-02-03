@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     tools:context="org.mobiledevsberkeley.calories.TabbedActivity"
     android:background="@color/bg"
-    android:fillViewport="false">
+    android:fillViewport="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/main_layout">
+        android:id="@+id/main_layout"
+        android:paddingBottom="20dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -135,17 +139,356 @@
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/equivHolder"
+            android:layout_below="@+id/results_holder">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/equivalent_to"
                 android:id="@+id/equivalent_text"
-                android:layout_below="@+id/cals_burned_holder"
                 android:textSize="16sp"
                 android:fontFamily="sans-serif-light"
                 android:layout_marginLeft="10dp" />
 
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorPrimary"
+                android:id="@+id/equiv_card"
+                card_view:cardElevation="10dp"
+                android:layout_margin="15dp">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="3"
+                    android:rowCount="4"
+                    android:alignmentMode="alignMargins"
+                    android:id="@+id/equiv_grid">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_columnSpan="1"
+                        android:layout_row="3"
+                        android:layout_rowSpan="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/grid_12"
+                        android:layout_columnWeight="1" >
+
+                        <ImageView
+                            android:layout_width="@dimen/grid_pic"
+                            android:layout_height="@dimen/grid_pic"
+                            android:id="@+id/imageView12"
+                            android:src="@drawable/stairclimbs_144" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 reps"
+                            android:id="@+id/stairclimb_text"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="1"
+                        android:layout_row="3"
+                        android:layout_rowSpan="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/grid_11"
+                        android:layout_columnWeight="1" >
+
+                        <ImageView
+                            android:layout_width="@dimen/grid_pic"
+                            android:layout_height="@dimen/grid_pic"
+                            android:id="@+id/imageView11"
+                            android:src="@drawable/swimming_144" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 reps"
+                            android:id="@+id/swimming_text"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_row="3"
+                        android:layout_rowSpan="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/grid_10"
+                        android:layout_columnWeight="1" >
+
+                        <ImageView
+                            android:layout_width="@dimen/grid_pic"
+                            android:layout_height="@dimen/grid_pic"
+                            android:id="@+id/imageView10"
+                            android:src="@drawable/jogging_144" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 reps"
+                            android:id="@+id/jogging_text"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_columnSpan="1"
+                        android:layout_row="2"
+                        android:layout_rowSpan="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/grid_9"
+                        android:layout_columnWeight="1" >
+
+                        <ImageView
+                            android:layout_width="@dimen/grid_pic"
+                            android:layout_height="@dimen/grid_pic"
+                            android:id="@+id/imageView9"
+                            android:src="@drawable/walking_144" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 reps"
+                            android:id="@+id/walking_text"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="1"
+                        android:layout_row="2"
+                        android:layout_rowSpan="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/grid_8"
+                        android:layout_columnWeight="1" >
+
+                        <ImageView
+                            android:layout_width="@dimen/grid_pic"
+                            android:layout_height="@dimen/grid_pic"
+                            android:id="@+id/imageView8"
+                            android:src="@drawable/cycling_144" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 reps"
+                            android:id="@+id/cycling_text"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_row="2"
+                        android:layout_rowSpan="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/grid_7"
+                        android:layout_columnWeight="1" >
+
+                        <ImageView
+                            android:layout_width="@dimen/grid_pic"
+                            android:layout_height="@dimen/grid_pic"
+                            android:id="@+id/imageView7"
+                            android:src="@drawable/pullup_144" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 reps"
+                            android:id="@+id/pullups_text"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_columnSpan="1"
+                        android:layout_row="1"
+                        android:layout_rowSpan="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/grid_6"
+                        android:layout_columnWeight="1" >
+
+                        <ImageView
+                            android:layout_width="@dimen/grid_pic"
+                            android:layout_height="@dimen/grid_pic"
+                            android:id="@+id/imageView6"
+                            android:src="@drawable/jumpingjacks_144" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 reps"
+                            android:id="@+id/jumpingjacks_text"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="1"
+                        android:layout_row="1"
+                        android:layout_rowSpan="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/grid_5"
+                        android:layout_columnWeight="1" >
+
+                        <ImageView
+                            android:layout_width="@dimen/grid_pic"
+                            android:layout_height="@dimen/grid_pic"
+                            android:id="@+id/imageView5"
+                            android:src="@drawable/planking_144" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 reps"
+                            android:id="@+id/palnking_text"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_row="1"
+                        android:layout_rowSpan="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/grid_4"
+                        android:layout_columnWeight="1" >
+
+                        <ImageView
+                            android:layout_width="@dimen/grid_pic"
+                            android:layout_height="@dimen/grid_pic"
+                            android:id="@+id/imageView4"
+                            android:src="@drawable/leglift_144" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 reps"
+                            android:id="@+id/leglift_text"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_columnSpan="1"
+                        android:layout_row="0"
+                        android:layout_rowSpan="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/grid_3"
+                        android:layout_columnWeight="1">
+
+                        <ImageView
+                            android:layout_width="@dimen/grid_pic"
+                            android:layout_height="@dimen/grid_pic"
+                            android:id="@+id/imageView3"
+                            android:src="@drawable/squat_144" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 reps"
+                            android:id="@+id/squats_text"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="1"
+                        android:layout_row="0"
+                        android:layout_rowSpan="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/grid_2"
+                        android:layout_columnWeight="1">
+
+                        <ImageView
+                            android:layout_width="@dimen/grid_pic"
+                            android:layout_height="@dimen/grid_pic"
+                            android:id="@+id/imageView2"
+                            android:src="@drawable/situp_144" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 reps"
+                            android:id="@+id/situp_text"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_row="0"
+                        android:layout_rowSpan="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/grid_1"
+                        android:layout_columnWeight="1">
+
+                        <ImageView
+                            android:layout_width="@dimen/grid_pic"
+                            android:layout_height="@dimen/grid_pic"
+                            android:id="@+id/imageView"
+                            android:src="@drawable/pushup_144" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 reps"
+                            android:id="@+id/pushups_text"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+                </GridLayout>
+
+            </android.support.v7.widget.CardView>
+
         </RelativeLayout>
 
     </RelativeLayout>
-</ScrollView>
+    </ScrollView>
+</LinearLayout>
