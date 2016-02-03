@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/main_layout"
-        android:paddingBottom="20dp">
+        android:paddingBottom="70dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -162,7 +162,8 @@
                 card_view:cardBackgroundColor="@color/colorPrimary"
                 android:id="@+id/equiv_card"
                 card_view:cardElevation="10dp"
-                android:layout_margin="15dp">
+                android:layout_margin="15dp"
+                android:layout_below="@+id/equivalent_text">
 
                 <GridLayout
                     android:layout_width="match_parent"
@@ -170,7 +171,10 @@
                     android:columnCount="3"
                     android:rowCount="4"
                     android:alignmentMode="alignMargins"
-                    android:id="@+id/equiv_grid">
+                    android:id="@+id/equiv_grid"
+                    android:columnOrderPreserved="true"
+                    android:rowOrderPreserved="true"
+                    android:padding="15dp">
 
                     <LinearLayout
                         android:orientation="vertical"
@@ -376,7 +380,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="0 reps"
-                            android:id="@+id/palnking_text"
+                            android:id="@+id/planking_text"
                             android:layout_gravity="center_horizontal" />
                     </LinearLayout>
 

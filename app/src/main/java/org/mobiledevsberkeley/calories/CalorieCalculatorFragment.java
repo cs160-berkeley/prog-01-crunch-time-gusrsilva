@@ -19,6 +19,8 @@ import android.util.TypedValue;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 
+import java.util.ArrayList;
+
 
 public class CalorieCalculatorFragment extends Fragment {
 
@@ -31,7 +33,7 @@ public class CalorieCalculatorFragment extends Fragment {
     private String[] workoutNames, unitNames = new String[2];
     private int[] workoutVals, workoutUnits;
     private RecyclerView equivRecycler;
-    private RAdapter equivAdt;
+    private ArrayList<TextView> equivTexts = new ArrayList<>();
 
     public CalorieCalculatorFragment() {
         // Required empty public constructor
@@ -97,6 +99,21 @@ public class CalorieCalculatorFragment extends Fragment {
             }
         });
 
+        //Add all equivalent workout text views to an arraylist for easier updating
+        equivTexts.add((TextView)view.findViewById(R.id.pushups_text));
+        equivTexts.add((TextView)view.findViewById(R.id.situp_text));
+        equivTexts.add((TextView)view.findViewById(R.id.squats_text));
+        equivTexts.add((TextView)view.findViewById(R.id.leglift_text));
+        equivTexts.add((TextView)view.findViewById(R.id.planking_text));
+        equivTexts.add((TextView)view.findViewById(R.id.jumpingjacks_text));
+        equivTexts.add((TextView)view.findViewById(R.id.pullups_text));
+        equivTexts.add((TextView)view.findViewById(R.id.cycling_text));
+        equivTexts.add((TextView)view.findViewById(R.id.walking_text));
+        equivTexts.add((TextView)view.findViewById(R.id.jogging_text));
+        equivTexts.add((TextView)view.findViewById(R.id.swimming_text));
+        equivTexts.add((TextView)view.findViewById(R.id.stairclimb_text));
+
+
         //Initialize RecyclerView
 
         return view;
@@ -124,7 +141,19 @@ public class CalorieCalculatorFragment extends Fragment {
         if(currentWorkoutPos == equivWorkoutPos) {
             equivWorkoutPos = (currentWorkoutPos + 1) % workoutNames.length;
         }
+        updateEquivResults();
 
+    }
+
+    private void updateEquivResults()
+    {
+        for(int i=0; i < 12; i++)
+        {
+            TextView curr = equivTexts.get(i);
+            int currAmnt = getEquivAmount(i);
+            String unit = unitNames[workoutUnits[i]];
+            curr.setText(currAmnt + " " + unit);
+        }
     }
 
     private int getCalsBurned()
@@ -137,10 +166,10 @@ public class CalorieCalculatorFragment extends Fragment {
         return (int)Math.ceil(calsBurned);
     }
 
-    private int getEquivAmount()
+    private int getEquivAmount(int i)
     {
         double calsBurned = getCalsBurned();
-        double equivalentWorkoutValue = workoutVals[equivWorkoutPos];
+        double equivalentWorkoutValue = workoutVals[i];
         double equivalentAmount = (calsBurned * equivalentWorkoutValue) / 100;
         return (int)Math.ceil(equivalentAmount);
     }

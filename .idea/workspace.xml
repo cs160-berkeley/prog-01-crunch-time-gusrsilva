@@ -20,22 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e38d60ce-9794-4eb6-a2ee-295150218380" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/cardview_v7_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/design_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/effects_android_23.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/maps_android_23.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v13_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/usb_android_23.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/planking_144.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/planking_144.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/RAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/grid_item.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/CalorieCalculatorFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/CalorieCalculatorFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calorie_calculator.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calorie_calculator.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
@@ -63,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_calorie_calculator.xml">
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="-12.041667">
-              <caret line="167" column="55" selection-start-line="167" selection-start-column="55" selection-end-line="167" selection-end-column="55" />
+              <caret line="168" column="55" selection-start-line="168" selection-start-column="55" selection-end-line="168" selection-end-column="55" />
               <folding>
                 <element signature="e#2278#2292#0" expanded="true" />
                 <element signature="e#2491#2505#0" expanded="true" />
@@ -90,60 +77,31 @@
       <file leaf-file-name="CalorieCalculatorFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/CalorieCalculatorFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0">
-              <caret line="99" column="33" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
+            <state vertical-scroll-proportion="-7.7777777">
+              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
               <folding>
                 <element signature="method#CalorieCalculatorFragment#0;class#CalorieCalculatorFragment#0" expanded="false" />
-                <element signature="class#2358:2470" expanded="false" />
-                <element signature="method#onClick#0;class#2358:2470" expanded="false" />
-                <element signature="class#2516:2922" expanded="false" />
-                <element signature="method#beforeTextChanged#0;class#2516:2922" expanded="false" />
-                <element signature="method#onTextChanged#0;class#2516:2922" expanded="false" />
-                <element signature="method#afterTextChanged#0;class#2516:2922" expanded="false" />
-                <element signature="class#3439:3949" expanded="false" />
-                <element signature="method#onItemSelected#0;class#3439:3949" expanded="false" />
-                <element signature="method#onNothingSelected#0;class#3439:3949" expanded="false" />
-                <element signature="method#updateResults#0;class#CalorieCalculatorFragment#0" expanded="false" />
+                <element signature="class#2420:2532" expanded="false" />
+                <element signature="method#onClick#0;class#2420:2532" expanded="false" />
+                <element signature="class#2578:2984" expanded="false" />
+                <element signature="method#beforeTextChanged#0;class#2578:2984" expanded="false" />
+                <element signature="method#onTextChanged#0;class#2578:2984" expanded="false" />
+                <element signature="method#afterTextChanged#0;class#2578:2984" expanded="false" />
+                <element signature="class#3501:4011" expanded="false" />
+                <element signature="method#onItemSelected#0;class#3501:4011" expanded="false" />
+                <element signature="method#onNothingSelected#0;class#3501:4011" expanded="false" />
                 <element signature="method#getCalsBurned#0;class#CalorieCalculatorFragment#0" expanded="false" />
-                <element signature="method#getEquivAmount#0;class#CalorieCalculatorFragment#0" expanded="false" />
                 <element signature="method#getTrafficlightColor#0;class#CalorieCalculatorFragment#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/RAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
-                <element signature="e#887#888#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="grid_item.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/grid_item.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dimens.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -1807,8 +1765,8 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/layout/grid_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/RAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/CalorieCalculatorFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/CalorieCalculatorFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_calorie_calculator.xml" />
       </list>
     </option>
@@ -2343,64 +2301,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/grid_item.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/RAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/CalorieCalculatorFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="99" column="33" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
-          <folding>
-            <element signature="method#CalorieCalculatorFragment#0;class#CalorieCalculatorFragment#0" expanded="false" />
-            <element signature="class#2358:2470" expanded="false" />
-            <element signature="method#onClick#0;class#2358:2470" expanded="false" />
-            <element signature="class#2516:2922" expanded="false" />
-            <element signature="method#beforeTextChanged#0;class#2516:2922" expanded="false" />
-            <element signature="method#onTextChanged#0;class#2516:2922" expanded="false" />
-            <element signature="method#afterTextChanged#0;class#2516:2922" expanded="false" />
-            <element signature="class#3439:3949" expanded="false" />
-            <element signature="method#onItemSelected#0;class#3439:3949" expanded="false" />
-            <element signature="method#onNothingSelected#0;class#3439:3949" expanded="false" />
-            <element signature="method#updateResults#0;class#CalorieCalculatorFragment#0" expanded="false" />
-            <element signature="method#getCalsBurned#0;class#CalorieCalculatorFragment#0" expanded="false" />
-            <element signature="method#getEquivAmount#0;class#CalorieCalculatorFragment#0" expanded="false" />
-            <element signature="method#getTrafficlightColor#0;class#CalorieCalculatorFragment#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -2413,10 +2317,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/CalorieCalculatorFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7777777">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding>
+            <element signature="method#CalorieCalculatorFragment#0;class#CalorieCalculatorFragment#0" expanded="false" />
+            <element signature="class#2420:2532" expanded="false" />
+            <element signature="method#onClick#0;class#2420:2532" expanded="false" />
+            <element signature="class#2578:2984" expanded="false" />
+            <element signature="method#beforeTextChanged#0;class#2578:2984" expanded="false" />
+            <element signature="method#onTextChanged#0;class#2578:2984" expanded="false" />
+            <element signature="method#afterTextChanged#0;class#2578:2984" expanded="false" />
+            <element signature="class#3501:4011" expanded="false" />
+            <element signature="method#onItemSelected#0;class#3501:4011" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#3501:4011" expanded="false" />
+            <element signature="method#getCalsBurned#0;class#CalorieCalculatorFragment#0" expanded="false" />
+            <element signature="method#getTrafficlightColor#0;class#CalorieCalculatorFragment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_calorie_calculator.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.041667">
-          <caret line="167" column="55" selection-start-line="167" selection-start-column="55" selection-end-line="167" selection-end-column="55" />
+          <caret line="168" column="55" selection-start-line="168" selection-start-column="55" selection-end-line="168" selection-end-column="55" />
           <folding>
             <element signature="e#2278#2292#0" expanded="true" />
             <element signature="e#2491#2505#0" expanded="true" />
