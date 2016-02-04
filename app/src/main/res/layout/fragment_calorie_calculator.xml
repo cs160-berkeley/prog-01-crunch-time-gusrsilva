@@ -131,7 +131,7 @@
                     <Button
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="SAVE"
+                        android:text="Add towards goal"
                         style="?android:attr/borderlessButtonStyle"
                         android:textColor="@color/colorAccent"
                         android:layout_below="@+id/calories_burned_amount"
