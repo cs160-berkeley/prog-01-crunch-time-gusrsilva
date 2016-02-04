@@ -25,8 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e38d60ce-9794-4eb6-a2ee-295150218380" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/SetGoalFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/SetGoalFragment.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/video-walkthrough.mov" afterPath="" />
     </list>
     <ignored path="CALories-gusrsilva.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,8 +99,8 @@
       <file leaf-file-name="SetGoalFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/SetGoalFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45833334">
-              <caret line="170" column="37" selection-start-line="170" selection-start-column="37" selection-end-line="170" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.114583336">
+              <caret line="159" column="24" selection-start-line="159" selection-start-column="24" selection-end-line="159" selection-end-column="24" />
               <folding>
                 <element signature="e#2206#2357#0" expanded="true" />
                 <element signature="e#2356#2357#0" expanded="true" />
@@ -2544,8 +2543,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/SetGoalFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45833334">
-          <caret line="170" column="37" selection-start-line="170" selection-start-column="37" selection-end-line="170" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.114583336">
+          <caret line="159" column="24" selection-start-line="159" selection-start-column="24" selection-end-line="159" selection-end-column="24" />
           <folding>
             <element signature="e#2206#2357#0" expanded="true" />
             <element signature="e#2356#2357#0" expanded="true" />
