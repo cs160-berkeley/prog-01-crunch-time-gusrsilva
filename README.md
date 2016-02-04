@@ -28,7 +28,7 @@ See [your demo video title here] (https://link_to_your_video)
   <p align="center">
     <img src="screenshots/screen4.png" height="600" alt="Screenshot"/>
     <br>
-    Once the user presses save they are shown a unintrusive <br> snackbar at the bottom of the screen, letting them know their <br>
+    Once the user presses 'Add Towards Goal' they are shown a unintrusive <br> snackbar at the bottom of the screen, letting them know their <br>
     workout has been added to their progress. They can click<br> on check progress to be taken to the screen that shows their progress<br> or they can simply swipe over. <br>
   </p><br><br><br>
   
