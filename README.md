@@ -14,29 +14,33 @@ See [your demo video title here] (https://link_to_your_video)
 
 
   <p align="center">
-    <img src="screenshots/screen1.png" height="500" alt="Screenshot"/>
+    <img src="screenshots/screen1.png" height="600" alt="Screenshot"/>
     <br>
     The user can input the type and amount of excercise, <br> then instantly see the amount of calories converted.<br>
-  </p> <br><br><br><br><br>
+  </p> <br><br><br>
+  
   <p align="center">
-    <img src="screenshots/screen2.png" height="500" alt="Screenshot"/>
+    <img src="screenshots/screen2.png" height="600" alt="Screenshot"/>
     <br>
     They can scroll down to see a nice visualization of <br> excercises that will burn the same amount of calories.<br>
-  </p>
+  </p><br><br><br>
+  
   <p align="center">
-    <img src="screenshots/screen4.png" height="500" alt="Screenshot"/>
+    <img src="screenshots/screen4.png" height="600" alt="Screenshot"/>
     <br>
     Once the user presses save they are shown a unintrusive <br> snackbar at the bottom of the screen, letting them know their <br>
     workout has been added to their progress. They can click<br> on check progress to be taken to the screen that shows their progress<br> or they can simply swipe over. <br>
-  </p>
+  </p><br><br><br>
+  
   <p align="center">
-    <img src="screenshots/screen3.png" height="500" alt="Screenshot"/>
+    <img src="screenshots/screen3.png" height="600" alt="Screenshot"/>
     <br>
     This screen shows their progress directly through text and <br> visually with an animated circle. On this screen users can also <br>
     set a new goal or reset their progress. <br>
-  </p>
+  </p><br><br><br>
+  
   <p align="center">
-    <img src="screenshots/screen5.png" height="500" alt="Screenshot"/>
+    <img src="screenshots/screen5.png" height="600" alt="Screenshot"/>
     <br>
     Once a user reaches their goal, they are greeted with an encouraging message. <br>
   </p>
