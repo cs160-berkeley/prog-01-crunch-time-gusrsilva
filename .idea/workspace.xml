@@ -25,7 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e38d60ce-9794-4eb6-a2ee-295150218380" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshots/screen4.png" afterPath="$PROJECT_DIR$/screenshots/screen4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/SetGoalFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/SetGoalFragment.java" />
     </list>
     <ignored path="CALories-gusrsilva.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen4.png" pinned="false" current-in-tab="true">
+      <file leaf-file-name="screen4.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/screenshots/screen4.png">
           <provider selected="true" editor-type-id="images">
             <state />
@@ -96,17 +97,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SetGoalFragment.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SetGoalFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/SetGoalFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.45833334">
+              <caret line="170" column="37" selection-start-line="170" selection-start-column="37" selection-end-line="170" selection-end-column="37" />
               <folding>
                 <element signature="e#2206#2357#0" expanded="true" />
                 <element signature="e#2356#2357#0" expanded="true" />
                 <element signature="e#2466#2619#0" expanded="true" />
                 <element signature="e#2618#2619#0" expanded="true" />
-                <element signature="e#7573#7673#0" expanded="false" />
+                <element signature="e#7574#7674#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1789,7 +1790,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/CalorieCalculatorFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/met_goal_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/SetGoalFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/TabbedActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/my_spinner_dropdown_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/my_spinner_item.xml" />
@@ -1797,6 +1797,7 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_calorie_calculator.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/SetGoalFragment.java" />
       </list>
     </option>
   </component>
@@ -1868,12 +1869,12 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="settings.editor.selected.configurable" value="instant.run" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="device.picker.selection" value="192.168.56.101:5555" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/screenshots/screen4.png" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/screenshots" />
     <property name="ExportApk.ApkPath" value="$USER_HOME$/Dropbox/APKs/Android App/CALories" />
     <property name="ExportApk.Flavors" value="" />
     <property name="ExportApk.BuildType" value="release" />
@@ -2283,7 +2284,7 @@
             <element signature="e#2356#2357#0" expanded="true" />
             <element signature="e#2466#2619#0" expanded="true" />
             <element signature="e#2618#2619#0" expanded="true" />
-            <element signature="e#7573#7673#0" expanded="false" />
+            <element signature="e#7574#7674#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2338,7 +2339,7 @@
             <element signature="e#2356#2357#0" expanded="true" />
             <element signature="e#2466#2619#0" expanded="true" />
             <element signature="e#2618#2619#0" expanded="true" />
-            <element signature="e#7573#7673#0" expanded="false" />
+            <element signature="e#7574#7674#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2463,20 +2464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/SetGoalFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding>
-            <element signature="e#2206#2357#0" expanded="true" />
-            <element signature="e#2356#2357#0" expanded="true" />
-            <element signature="e#2466#2619#0" expanded="true" />
-            <element signature="e#2618#2619#0" expanded="true" />
-            <element signature="e#7573#7673#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screenshots/screen3.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2540,9 +2527,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/screenshots/screen0.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshots/screen01.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/screenshots/screen4.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/mobiledevsberkeley/calories/SetGoalFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45833334">
+          <caret line="170" column="37" selection-start-line="170" selection-start-column="37" selection-end-line="170" selection-end-column="37" />
+          <folding>
+            <element signature="e#2206#2357#0" expanded="true" />
+            <element signature="e#2356#2357#0" expanded="true" />
+            <element signature="e#2466#2619#0" expanded="true" />
+            <element signature="e#2618#2619#0" expanded="true" />
+            <element signature="e#7574#7674#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

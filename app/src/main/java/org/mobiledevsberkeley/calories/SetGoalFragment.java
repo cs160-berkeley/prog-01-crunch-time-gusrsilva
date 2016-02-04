@@ -168,7 +168,7 @@ public class SetGoalFragment extends Fragment {
     {
         md = new MaterialDialog
                 .Builder(getContext())
-                .title("Reset Goal")
+                .title("Reset Count")
                 .titleColor(Color.WHITE)
                 .backgroundColor(getResources().getColor(R.color.colorPrimaryDark))
                 .autoDismiss(false)
