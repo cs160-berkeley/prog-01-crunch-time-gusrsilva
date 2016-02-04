@@ -35,7 +35,7 @@ public class SetGoalFragment extends Fragment {
     private Button bSetGoal, bResetCount;
     private TextView textPercentage, textRemaining, textCurrentGoal;
     private SharedPreferences.Editor prefEditor;
-    private boolean needToRedrawDeco = true;
+    private boolean needToRedrawDeco = true, knowsWon = false;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -81,6 +81,11 @@ public class SetGoalFragment extends Fragment {
         else {  }
     }
 
+    private void displayMetGoal()
+    {
+
+    }
+
     private void createDecoView()
     {
         if(sharedPref.contains(GOAL_KEY))
@@ -106,8 +111,10 @@ public class SetGoalFragment extends Fragment {
             @Override
             public void onSeriesItemAnimationProgress(float percentComplete, float currentPosition) {
                 float percentFilled = ((currentPosition - backgroundSeries.getMinValue()) / (backgroundSeries.getMaxValue() - backgroundSeries.getMinValue()));
-                textPercentage.setText(String.format("%.0f%%", percentFilled * 100f));
-                textRemaining.setText(String.format("%d Calories Remaining", (currentGoal-(int)currentPosition)));
+                percentFilled *= 100f;
+                textPercentage.setText(String.format(Locale.ENGLISH, "%.0f%%", (percentFilled > 100? 100 : percentFilled)));
+                int remaining = currentGoal - (int)currentPosition;
+                textRemaining.setText(String.format(Locale.ENGLISH, "%d Calories Remaining", (remaining < 0? 0:remaining)));
             }
 
             @Override
@@ -128,6 +135,9 @@ public class SetGoalFragment extends Fragment {
         {
             currentAmount = sharedPref.getInt(AMOUNT_KEY, currentAmount);
         }
+        if(currentAmount >= currentGoal && currentGoal != 0)
+            textCurrentGoal.setText("Goal complete. Nice Work!");
+
         decoView.addEvent(new DecoEvent.Builder(currentAmount)
                 .setIndex(series1Index)
                 .setDelay(1000)

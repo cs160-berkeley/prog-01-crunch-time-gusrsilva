@@ -73,18 +73,25 @@ public class CalorieCalculatorFragment extends Fragment {
             public void onClick(View v) {
                 int currentAmount = sharedPref.getInt(AMOUNT_KEY, 0);
                 int newAmount = getCalsBurned();
+                int currGoal = sharedPref.getInt(GOAL_KEY, 0);
+                vNumber.setText("");
                 prefEditor.putInt(AMOUNT_KEY, currentAmount + newAmount);
                 prefEditor.apply();
-                Snackbar.make(v
-                        ,String.format(Locale.ENGLISH, "Added %d Calories!",newAmount)
-                        ,Snackbar.LENGTH_LONG)
-                        .setAction("Check Progress", new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                TabbedActivity.viewPager.setCurrentItem(1,true);
-                            }
-                        })
-                        .show();
+
+                if(currentAmount + newAmount > currGoal && currGoal > 0)
+                    scrollToGoal();
+                else {
+                    Snackbar.make(v
+                            , String.format(Locale.ENGLISH, "Added %d Calories!", newAmount)
+                            , Snackbar.LENGTH_LONG)
+                            .setAction("Check Progress", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    scrollToGoal();
+                                }
+                            })
+                            .show();
+                }
             }
         });
         vNumber.addTextChangedListener(new TextWatcher() {
@@ -166,6 +173,11 @@ public class CalorieCalculatorFragment extends Fragment {
         }
         updateEquivResults();
 
+    }
+
+    private void scrollToGoal()
+    {
+        TabbedActivity.viewPager.setCurrentItem(1, true);
     }
 
     private void updateEquivResults()

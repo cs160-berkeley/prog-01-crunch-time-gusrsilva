@@ -13,7 +13,8 @@
         android:textSize="25sp"
         android:textAlignment="center"
         android:fontFamily="sans-serif-light"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -59,7 +60,8 @@
             android:text="0%"
             android:id="@+id/textPercentage"
             android:textSize="80sp"
-            android:fontFamily="sans-serif-thin" />
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@android:color/white" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -70,7 +72,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0 Calories Remaining"
-                android:id="@+id/cals_remaining" />
+                android:id="@+id/cals_remaining"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
     </LinearLayout>

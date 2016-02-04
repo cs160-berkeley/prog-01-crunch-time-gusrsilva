@@ -28,7 +28,8 @@ public class TabbedActivity extends AppCompatActivity {
 
         final Toolbar toolbar = (Toolbar) findViewById(R.id.tabanim_toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        getSupportActionBar().setIcon(R.drawable.banner);
 
         viewPager = (ViewPager) findViewById(R.id.tabanim_viewpager);
         setupViewPager(viewPager);

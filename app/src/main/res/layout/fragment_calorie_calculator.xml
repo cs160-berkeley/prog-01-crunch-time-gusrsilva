@@ -31,7 +31,7 @@
                 android:id="@+id/workout_spinner_holder"
                 android:layout_centerVertical="true">
                 <Spinner
-                    android:layout_width="100dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/workout_spinner"
                     android:layout_alignParentStart="true"
@@ -92,7 +92,8 @@
                         android:fontFamily="sans-serif-light"
                         android:textSize="20sp"
                         android:layout_marginLeft="15dp"
-                        android:layout_marginTop="15dp" />
+                        android:layout_marginTop="15dp"
+                        android:textColor="@android:color/white" />
 
                     <ImageView
                         android:layout_width="48dp"
@@ -116,7 +117,8 @@
                         android:textSize="150sp"
                         android:fontFamily="sans-serif-thin"
                         android:layout_centerHorizontal="true"
-                        android:singleLine="true"/>
+                        android:singleLine="true"
+                        android:textColor="@android:color/white" />
 
                 <FrameLayout
                         android:layout_width="match_parent"
@@ -127,14 +129,14 @@
                         android:layout_marginRight="10dp"></FrameLayout>
 
                     <Button
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="SAVE"
                         style="?android:attr/borderlessButtonStyle"
-                        android:layout_alignParentRight="true"
                         android:textColor="@color/colorAccent"
                         android:layout_below="@+id/calories_burned_amount"
-                        android:id="@+id/save_button" />
+                        android:id="@+id/save_button"
+                        android:layout_centerHorizontal="true" />
 
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
@@ -154,7 +156,8 @@
                 android:id="@+id/equivalent_text"
                 android:textSize="16sp"
                 android:fontFamily="sans-serif-light"
-                android:layout_marginLeft="10dp" />
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white" />
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -199,7 +202,8 @@
                             android:layout_height="wrap_content"
                             android:text="0 reps"
                             android:id="@+id/stairclimb_text"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -225,7 +229,8 @@
                             android:layout_height="wrap_content"
                             android:text="0 reps"
                             android:id="@+id/swimming_text"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -251,7 +256,8 @@
                             android:layout_height="wrap_content"
                             android:text="0 reps"
                             android:id="@+id/jogging_text"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -277,7 +283,8 @@
                             android:layout_height="wrap_content"
                             android:text="0 reps"
                             android:id="@+id/walking_text"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -303,7 +310,8 @@
                             android:layout_height="wrap_content"
                             android:text="0 reps"
                             android:id="@+id/cycling_text"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -329,7 +337,8 @@
                             android:layout_height="wrap_content"
                             android:text="0 reps"
                             android:id="@+id/pullups_text"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -355,7 +364,8 @@
                             android:layout_height="wrap_content"
                             android:text="0 reps"
                             android:id="@+id/jumpingjacks_text"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -381,7 +391,8 @@
                             android:layout_height="wrap_content"
                             android:text="0 reps"
                             android:id="@+id/planking_text"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -407,7 +418,8 @@
                             android:layout_height="wrap_content"
                             android:text="0 reps"
                             android:id="@+id/leglift_text"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -433,7 +445,8 @@
                             android:layout_height="wrap_content"
                             android:text="0 reps"
                             android:id="@+id/squats_text"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -459,7 +472,8 @@
                             android:layout_height="wrap_content"
                             android:text="0 reps"
                             android:id="@+id/situp_text"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -485,7 +499,8 @@
                             android:layout_height="wrap_content"
                             android:text="0 reps"
                             android:id="@+id/pushups_text"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
                 </GridLayout>
 
