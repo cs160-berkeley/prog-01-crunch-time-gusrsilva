@@ -8,7 +8,7 @@ Gus Silva ([gus7silva@berkeley.edu](mailto:gus7silva@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [Video Walkthrough] (https://youtu.be/cSw_V0cyFpE)
 
 ## Screenshots
 
