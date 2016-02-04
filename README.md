@@ -12,7 +12,13 @@ See [your demo video title here] (https://link_to_your_video)
 
 ## Screenshots
 
-<img src="screenshots/screen1.png" height="400" alt="Screenshot"/>
+
+  <p align="center>
+  <img src="screenshots/screen1.png" height="400" alt="Screenshot"/>
+  </p>
+  
+  
+  <p align="middle">The user can input the type and amount of excercise, then instantly see the amount of calories converted.</p>
 <img src="screenshots/screen2.png" height="400" alt="Screenshot"/>
 <img src="screenshots/screen3.png" height="400" alt="Screenshot"/>
 <img src="screenshots/screen4.png" height="400" alt="Screenshot"/>
