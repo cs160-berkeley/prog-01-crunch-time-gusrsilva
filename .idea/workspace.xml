@@ -25,11 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e38d60ce-9794-4eb6-a2ee-295150218380" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshots/screen1.png" afterPath="$PROJECT_DIR$/screenshots/screen1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshots/screen2.png" afterPath="$PROJECT_DIR$/screenshots/screen2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshots/screen4.png" afterPath="$PROJECT_DIR$/screenshots/screen4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calorie_calculator.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calorie_calculator.xml" />
     </list>
     <ignored path="CALories-gusrsilva.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1877,7 +1873,7 @@
     <property name="device.picker.selection" value="192.168.56.101:5555" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/APKs/Android App/CALories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/screenshots/screen4.png" />
     <property name="ExportApk.ApkPath" value="$USER_HOME$/Dropbox/APKs/Android App/CALories" />
     <property name="ExportApk.Flavors" value="" />
     <property name="ExportApk.BuildType" value="release" />
