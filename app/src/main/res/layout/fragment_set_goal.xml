@@ -21,21 +21,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/current_goal">
+        android:layout_below="@+id/current_goal"
+        android:layout_marginTop="10dp">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New Goal"
             android:id="@+id/new_goal"
-            android:backgroundTint="@color/colorAccent" />
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginRight="10dp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reset Count"
             android:id="@+id/reset_count"
-            android:backgroundTint="@color/red" />
+            android:backgroundTint="@color/red"
+            android:layout_marginLeft="10dp" />
 
     </LinearLayout>
 
