@@ -1,4 +1,4 @@
-# PROG 01: Crunch Time
+# CAL-ories
 
 A simple and light-weight fitness tracking app focused on the user. To be more specific, the app keeps track of the calories burned per workout and lets the user set goals and work towards them. To make it easy for the user, the app calculates the workout into calories burned based on standard amounts.
 
